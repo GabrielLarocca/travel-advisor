@@ -123,7 +123,7 @@ function App() {
 				<div className='general-loading'>
 					<p>Travel Advisor</p>
 
-					<CircularProgress color='#3a3b3c' size="5rem" />
+					<CircularProgress color='#3a3b3c' size="5rem" className='circular-progress' />
 				</div>
 			}
 

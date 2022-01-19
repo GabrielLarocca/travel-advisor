@@ -12,7 +12,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 		<div className='outercontainer'>
 			<div className='card'>
 				<div className='mh0 containerRow'>
-					<div className='containerImage' style={{ backgroundImage: `url(${place?.photo?.images?.large?.url})` ?? `url('https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg')` }} />
+					<div className='containerImage' style={{ backgroundImage: place?.photo ? `url(${place?.photo?.images?.large?.url})` : `url('https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg')` }} />
 
 					<div className='containerCard'>
 						<div className='containerHeader'>

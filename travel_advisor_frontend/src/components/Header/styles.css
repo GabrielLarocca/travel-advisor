@@ -1,0 +1,24 @@
+.header {
+	background-color: #fff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	z-index: 10;
+}
+
+.titulo {
+	font-family: 'RocknRoll One', sans-serif;
+	font-size: 20px;
+}
+
+.seach-container {
+	display: flex;
+}
+
+@media screen and (max-width: 600px) {
+	.toolbar-header {
+		justify-content: center !important;
+	}
+
+	.seach-container {
+		display: none !important;
+	}
+}

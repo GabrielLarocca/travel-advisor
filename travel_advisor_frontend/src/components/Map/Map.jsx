@@ -26,7 +26,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
 
 							<p className='typography'>{place.name}</p>
 
-							<div className='pointer' style={{ backgroundImage: `url(${place?.photo?.images?.large?.url})` ?? `url('https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg')` }} />
+							<div className='pointer' style={{ backgroundImage: place?.photo ? `url(${place?.photo?.images?.large?.url})` : `url('https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg')` }} />
 						</div>
 					}
 				</div>
