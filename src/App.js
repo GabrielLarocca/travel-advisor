@@ -1,4 +1,5 @@
-import { CssBaseline, Grid } from '@material-ui/core';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { CssBaseline } from '@material-ui/core';
 import { useEffect, useState } from 'react';
 
 import { getPlacesData, getWeatherData } from './api';
@@ -6,6 +7,7 @@ import Header from './components/Header/Header';
 import List from './components/List/List';
 import Map from './components/Map/Map';
 
+import './app.css';
 
 function App() {
 	const [type, setType] = useState('restaurants');
@@ -62,33 +64,26 @@ function App() {
 	};
 
 	return (
-		<>
+		<div className='body'>
 			<CssBaseline />
+
 			<Header onPlaceChanged={onPlaceChanged} onLoad={onLoad} />
-			<Grid container spacing={3} style={{ width: '100%' }}>
-				<Grid item xs={12} md={4}>
-					<List
-						isLoading={isLoading}
-						childClicked={childClicked}
+
+			<div className="innerContainer">
+				<div className='results'>
+					<List isLoading={isLoading} childClicked={childClicked} type={type}
 						places={filteredPlaces.length ? filteredPlaces : places}
-						type={type}
-						setType={setType}
-						rating={rating}
-						setRating={setRating}
+						setType={setType} rating={rating} setRating={setRating}
 					/>
-				</Grid>
-				<Grid item xs={12} md={8} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-					<Map
-						setChildClicked={setChildClicked}
-						setBounds={setBounds}
-						setCoords={setCoords}
-						coords={coords}
-						places={filteredPlaces.length ? filteredPlaces : places}
-						weatherData={weatherData}
+				</div>
+
+				<div className='containerMap' id="map">
+					<Map setChildClicked={setChildClicked} setBounds={setBounds} setCoords={setCoords}
+						coords={coords} places={filteredPlaces.length ? filteredPlaces : places} weatherData={weatherData}
 					/>
-				</Grid>
-			</Grid>
-		</>
+				</div>
+			</div>
+		</div>
 	);
 }
 

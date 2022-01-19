@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+#root {
+	font-family: 'Poppins', sans-serif !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5f5f5f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #2b2a2a;
+}
+
+.containerMap {
+	width: 60%;
+	height: 100%;
+}
+
+.body {
+	width: 100% !important;
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
+
+.innerContainer {
+	display: flex;
+	height: calc(100vh - 65px);
+	scroll-behavior: smooth;
+}
+
+.results {
+	display: flex;
+	width: 40%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
