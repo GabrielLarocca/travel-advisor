@@ -4,7 +4,8 @@ site to find place recommendations using Google's auto-complete and maps API's a
 
 ## :wrench: Setup
 
-- In `./travel_advisor` folder, run `npm install` to install the dependencies
+- In `./travel_advisor` folder, run `npm install` to install the dependencies;
+- Need to set API keys in .env file;
 - To init the server, run `npm start`;
 
 ## 📷 Gallery
