@@ -22,4 +22,4 @@ site to find place recommendations using Google's auto-complete and maps API's a
 
 - This project was inspired by a course project, with the purpose of improving knowledge and implementing improvements in the base project.
 
-- running on [this link](https://travel.gabriellarocca.com.br/)
+- Running on [this link](https://travel.gabriellarocca.com.br/)
