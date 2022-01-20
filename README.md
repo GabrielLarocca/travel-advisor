@@ -1,6 +1,6 @@
 # Travel Advisor
 
-site to find place recommendations using Google's auto-complete and maps API's and RapidApi Weather Weather and Travel Advisor API's.
+Website to find place recommendations using Google's auto-complete and maps API's and RapidApi Weather Weather and Travel Advisor API's.
 
 ## :wrench: Setup
 
